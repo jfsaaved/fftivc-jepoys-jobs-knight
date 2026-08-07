@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><!--
+This table file is used to overwrite the game's hardcoded job table.
+
+Refer to: https://ffhacktics.com/wiki/Job_Data
+This table links to nex table 'Job'. Some properties edited here may be overriden by the nex table.
+
+You can use this file as a base to edit Job data in your mod.
+Simply copy this file to your mod's folder under FFTIVC/tables/<enhanced/classic/combined>/JobData.xml.
+
+IMPORTANT: You are free to remove everything and **SHOULD ONLY LEAVE ELEMENTS THAT YOU HAVE EDITED** to avoid conflicts between mods.
+Only properties that are actually included in this file will be tracked as edited. Properties not edited will inherit their
+value from the original table or, from other mods making changes depending on mod order.
+
+IMPORTANT 2: The Id property must NOT be removed for nodes that you're leaving here!
+
+IMPORTANT 3: Id cannot be more than 175 (hardcoded table size is 176).
+
+For available flags, refer to https://github.com/Nenkai/fftivc.utility.modloader/blob/master/fftivc.utility.modloader.Interfaces/Tables/Structures/JOB_DATA.cs
+--><JobTable>
+  <Version>1</Version>
+  <Entries>
+    <Job>
+      <Id>76</Id>
+      <!-- Knight / ナイト / Chevalier / Ritter -->
+      <JobCommandId>7</JobCommandId>
+      <InnateAbilityId1>0</InnateAbilityId1>
+      <InnateAbilityId2>0</InnateAbilityId2>
+      <InnateAbilityId3>0</InnateAbilityId3>
+      <InnateAbilityId4>0</InnateAbilityId4>
+      <EquippableItems>KnightSword, Sword, Polearm, Shield, Knife, Perfume, Cloak, Armlet, Ring, Armguard, Shoes, Robe, Armor, HairAdornment, Helmet, Unarmed</EquippableItems>
+      <HPGrowth>15</HPGrowth>
+      <HPMultiplier>200</HPMultiplier>
+      <MPGrowth>10</MPGrowth>
+      <MPMultiplier>70</MPMultiplier>
+      <SpeedGrowth>100</SpeedGrowth>
+      <SpeedMultiplier>100</SpeedMultiplier>
+      <PAGrowth>40</PAGrowth>
+      <PAMultiplier>65</PAMultiplier>
+      <MAGrowth>40</MAGrowth>
+      <MAMultiplier>65</MAMultiplier>
+      <Move>3</Move>
+      <Jump>3</Jump>
+      <CharacterEvasion>10</CharacterEvasion>
+      <InnateStatus>None</InnateStatus>
+      <ImmuneStatus>None</ImmuneStatus>
+      <StartingStatus>None</StartingStatus>
+      <AbsorbElements>None</AbsorbElements>
+      <NullifyElements>None</NullifyElements>
+      <HalveElements>None</HalveElements>
+      <WeakElements>None</WeakElements>
+      <MonsterPortrait>0</MonsterPortrait>
+      <MonsterPalette>0</MonsterPalette>
+      <MonsterGraphic>0</MonsterGraphic>
+    </Job>
+  </Entries>
+</JobTable>

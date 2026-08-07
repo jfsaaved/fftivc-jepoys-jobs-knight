@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+This table file is used to overwrite the game's hardcoded ability animation table.
+
+This table is used to determine which animation(s) are used when an ability is executed.
+Refer to: https://ffhacktics.com/wiki/Animations_(Tab)
+
+You can use this file as a base to edit Ability Animation data in your mod.
+Simply copy this file to your mod's folder under FFTIVC/tables/<enhanced/classic/combined>/AbilityTypeData.xml.
+
+IMPORTANT: You are free to remove everything and **SHOULD ONLY LEAVE ELEMENTS THAT YOU HAVE EDITED** to avoid conflicts between mods.
+Only properties that are actually included in this file will be tracked as edited. Properties not edited will inherit their
+value from the original table or, from other mods making changes depending on mod order.
+
+IMPORTANT 2: The Id property must NOT be removed for nodes that you're leaving here!
+
+IMPORTANT 3: Same ids as AbilityData. Id cannot be more than 453 (hardcoded table size is 454).
+-->
+
+<AbilityTypeTable>
+  <Version>1</Version>
+  <Entries>
+    <AbilityType>
+      <Id>138</Id>
+      <ChargeEffectType>7</ChargeEffectType>
+      <AnimationId>0</AnimationId>
+      <BattleTextId>0</BattleTextId>
+    </AbilityType>
+    <AbilityType>
+      <Id>139</Id>
+      <ChargeEffectType>7</ChargeEffectType>
+      <AnimationId>0</AnimationId>
+      <BattleTextId>0</BattleTextId>
+    </AbilityType>
+    <AbilityType>
+      <Id>130</Id>
+      <ChargeEffectType>7</ChargeEffectType>
+      <AnimationId>0</AnimationId>
+      <BattleTextId>0</BattleTextId>
+    </AbilityType>
+    <AbilityType>
+      <Id>141</Id>
+      <ChargeEffectType>7</ChargeEffectType>
+      <AnimationId>0</AnimationId>
+      <BattleTextId>0</BattleTextId>
+    </AbilityType>
+    <AbilityType>
+      <Id>142</Id>
+      <ChargeEffectType>7</ChargeEffectType>
+      <AnimationId>0</AnimationId>
+      <BattleTextId>0</BattleTextId>
+    </AbilityType>
+  </Entries>
+</AbilityTypeTable>

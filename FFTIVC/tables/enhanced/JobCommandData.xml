@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><!--
+This table file is used to overwrite the game's hardcoded job command table.
+
+Refer to: https://ffhacktics.com/wiki/Skillsets
+This table links to nex table 'JobCommand'. Some properties edited here may be overriden by the nex table.
+
+You can use this file as a base to edit Item data in your mod.
+Simply copy this file to your mod's folder under FFTIVC/tables/<enhanced/classic/combined>/JobCommandData.xml.
+
+IMPORTANT: You are free to remove everything and **SHOULD ONLY LEAVE ELEMENTS THAT YOU HAVE EDITED** to avoid conflicts between mods.
+Only properties that are actually included in this file will be tracked as edited. Properties not edited will inherit their
+value from the original table or, from other mods making changes depending on mod order.
+
+IMPORTANT 2: The Id property must NOT be removed for nodes that you're leaving here!
+
+IMPORTANT 3: Id must be 0-175 (main table, hardcoded size 176), OR 224-226 (Darkness/Piracy/
+Huntcraft - Dark Knight/Sky Pirate/Game Hunter's War of the Lions-exclusive skillsets). 176-223
+belong to MonsterJobCommandData, not this file. 224-226 aren't contiguous with 0-175 in memory -
+they're found via their own independent signature - but are tracked as part of this same table
+since they use the identical entry layout and are conceptually the same kind of data.
+
+IMPORTANT 4: You do not need to worry about setting ExtendAbilityIdFlagBits or ExtendReactionSupportMovementIdFlagBits.
+The loader will fill these according to ids. You're free to use ids 0-512 directly.
+
+For available flags, refer to https://github.com/Nenkai/fftivc.utility.modloader/blob/master/fftivc.utility.modloader.Interfaces/Tables/Structures/JOB_COMMAND_DATA.cs
+--><JobCommandTable>
+  <Version>1</Version>
+  <Entries>
+    <JobCommand>
+      <Id>7</Id> <!-- Arts of War / 戦技 / Arts tactiques / Kriegskünste -->
+      <ExtendAbilityIdFlagBits>0</ExtendAbilityIdFlagBits>
+      <ExtendReactionSupportMovementIdFlagBits>0</ExtendReactionSupportMovementIdFlagBits>
+      <AbilityId1>138</AbilityId1>
+      <AbilityId2>139</AbilityId2>
+      <AbilityId3>140</AbilityId3>
+      <AbilityId4>141</AbilityId4>
+      <AbilityId5>142</AbilityId5>
+      <AbilityId6>0</AbilityId6>
+      <AbilityId7>0</AbilityId7>
+      <AbilityId8>0</AbilityId8>
+      <AbilityId9>0</AbilityId9>
+      <AbilityId10>0</AbilityId10>
+      <AbilityId11>0</AbilityId11>
+      <AbilityId12>0</AbilityId12>
+      <AbilityId13>0</AbilityId13>
+      <AbilityId14>0</AbilityId14>
+      <AbilityId15>0</AbilityId15>
+      <AbilityId16>0</AbilityId16>
+      <ReactionSupportMovementId1>447</ReactionSupportMovementId1>
+      <ReactionSupportMovementId2>456</ReactionSupportMovementId2>
+      <ReactionSupportMovementId3>454</ReactionSupportMovementId3>
+      <ReactionSupportMovementId4>455</ReactionSupportMovementId4>
+      <ReactionSupportMovementId5>0</ReactionSupportMovementId5>
+      <ReactionSupportMovementId6>0</ReactionSupportMovementId6>
+    </JobCommand>
+  </Entries>
+</JobCommandTable>
